@@ -38,7 +38,5 @@ public class PostController {
     //check
 //    @GetMapping
 //    public String greet(){
-//        return "heyhey";
-//    }
 
 }
