@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ChatService {
-
     private static Logger logger = LoggerFactory.getLogger(ChatService.class);
 
    public String getReply(String message) {
