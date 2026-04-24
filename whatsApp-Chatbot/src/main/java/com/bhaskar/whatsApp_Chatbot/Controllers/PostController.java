@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.*;
 public class PostController {
 
     private static final Logger logger = LoggerFactory.getLogger(PostController.class);
-
     private final ChatService chatService;
 
     //constructor injection for tight coupling
@@ -31,12 +30,5 @@ public class PostController {
         String reply = chatService.getReply(messageRequest.getMessage());
 
         return ResponseEntity.ok(new MessageResponse(reply));
-
     }
-
-
-    //check
-//    @GetMapping
-//    public String greet(){
-
 }
